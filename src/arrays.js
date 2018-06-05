@@ -1,9 +1,19 @@
 const getNthElement = (index, array) => {
   // your code here
+  for (let i = 0; i < array.length; i++) {
+    if (i != '') {
+      return array([index]).toString();
+    } else { 
+      i = 0;
+    }
+  
+
+
 };
 
 const arrayToCSVString = (array) => {
   // your code here
+  
 };
 
 const csvStringToArray = (string) => {
@@ -12,6 +22,7 @@ const csvStringToArray = (string) => {
 
 const addToArray = (element, array) => {
   // your code here
+
 };
 
 const addToArray2 = (element, array) => {
@@ -56,6 +67,7 @@ const sumNumbers = (numbers) => {
 
 const sortByLastLetter = (strings) => {
   // your code here
+
 };
 
 module.exports = {
