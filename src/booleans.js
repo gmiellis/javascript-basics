@@ -1,136 +1,76 @@
 const negate = (a) => {
-  // your code here
-    if (a) {
-        return false;
-    } else {
-        return true;
-    }
+
+  return a ? false : true;
 };
 
 const both = (a, b) => {
-  // your code here
-    if (a && b) {
-        return true;
-    } else {
-        return false;
-  }
+
+  return a && b ? true : false;
 };
 
 const either = (a, b) => {
-  // your code here
-    if (a || b) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return a || b ? true : false;
 };
 
 const none = (a, b) => {
-  // your code here
-    if (a, b == 1 || a > b || a < b) {
-        return false;
-    } else {
-        return true;
-    }
+
+  return !a && !b ? true : false;
 };
 
 const one = (a, b) => {
-  // your code here
-    if (a === b) {
-        return false;
-    } else {
-        return true;
-    }
+
+  return !a === b ? true : false;
 };
 
 const truthiness = (a) => {
-  // your code here
-    if (a) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return a ? true : false;
 };
 
 const isEqual = (a, b) => {
-  // your code here
-    if (a == b) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return a === b ? true : false;
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
-    if (a <= b) {
-        return false;
-    } else {
-        return true;
-    }
+
+  return a > b ? true : false;
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
-    if (a <= b) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return a <= b ? true : false;
 };
 
 const isOdd = (a) => {
-  // your code here
-    if (a % 2 > 0) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return a % 2 > 0 ? true : false;
 };
 
 const isEven = (a) => {
-  // your code here
-    if (a % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return a % 2 === 0 ? true : false;
 };
 
 const isSquare = (a) => {
-  // your code here
-    if (Math.sqrt(a) * Math.sqrt(a) === a) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return Math.sqrt(a) * Math.sqrt(a) === a ? true : false;
 };
 
 const startsWith = (char, string) => {
-  // your code here
-    if (string.charAt(0) === char) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return string.charAt(0) === char ? true : false;
 };
 
 const containsVowels = (string) => {
-  // your code here
-    if (string.match(/[aeiouAEIOU]/)) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return string.match(/[aeiouAEIOU]/) ? true : false;
 };
 
 const isLowerCase = (string) => {
-  // your code here
-    if (string === string.toLowerCase()) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return string === string.toLowerCase() ? true : false;
 };
 
 module.exports = {
@@ -148,5 +88,5 @@ module.exports = {
   isSquare,
   startsWith,
   containsVowels,
-  isLowerCase
-}
+  isLowerCase,
+};

@@ -1,85 +1,77 @@
 const createPerson = (name, age) => {
 
-    const person = {
-        name: name,
-        age: age,
-    }
-    return person;
+  const person = {
+    name: name,
+    age: age,
+  };
+  return person;
 };
 
 const getName = (object) => {
-  // your code here
-    return object.name;
+
+  return object.name;
 };
 
 const getProperty = (property, object) => {
-  // your code here
-    return object.age;
+
+  return object.age;
 };
 
 const hasProperty = (property, object) => {
-  // your code here
-    if (property in object) {
-        return true;
-    } else {
-        return false;
-    }
+
+  return property in object ? true : false;
 };
 
 const isOver65 = (person) => {
-  // your code here
-    if (person.age > 65) {
-        return true;
-    } else {
-        return false;
-  }
 
+  return person.age > 65 ? true : false;
 };
 
 const getAges = (people) => {
-  // your code here
-    let ages =[];
-        for (let age of people) {
-            ages.push(age.age);
-            }
-        return ages;
+
+  const ages = [];
+  for (const age of people) {
+    ages.push(age.age);
+  }
+  return ages;
 };
 
 const findByName = (name, people) => {
-  // your code here
-    let result = people.filter(person => name === person.name);
-    let resulto = result.reduce(function(obj,item) {
-        obj[item.key] = item.value;
-            return obj;
- });
-        return resulto;
+
+  const result = people.filter(person => name === person.name);
+  const resulto = result.reduce(function (obj, item) {
+    obj[item.key] = item.value;
+    return obj;
+  });
+  return resulto;
 };
 
 const findHondas = (cars) => {
-  // your code here
-    let result = cars.filter( cars => cars.manufacturer === 'Honda');
-        return result;
- };
+
+  const result = cars.filter(car => car.manufacturer === 'Honda');
+  return result;
+};
 
 const averageAge = (people) => {
-  // your code here
-    let ages =[];
 
-        for (let age of people) {
-            ages.push(age.age);
-            }
+  const ages = [];
 
-        let sum = ages.reduce(function(a, b ) {
-            return a + b; });
+  for (const age of people) {
+    ages.push(age.age);
+  }
 
-        let avg = sum / ages.length;
-            return avg;
+  const sum = ages.reduce(function (a, b) {
+    return a + b;
+  });
+
+  const avg = sum / ages.length;
+  return avg;
 
 };
 
 const createTalkingPerson = (name, age) => {
-  // your code here
-return `Hi Fred, my name is ${bill.name} and I am ${bill.age}!`;
+
+  return `Hi Fred, my name is ${bill.name} and I am ${bill.age}!`;
 };
 
 module.exports = {
@@ -92,5 +84,5 @@ module.exports = {
   findByName,
   findHondas,
   averageAge,
-  createTalkingPerson
-}
+  createTalkingPerson,
+};
